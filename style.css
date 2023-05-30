@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#map {
+  height: 400px;
+}
+
+.form {
+  margin-top: 3rem;
+  margin-inline: auto;
+  max-width: 600px;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input {
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #6a6a6a;
+}
+
+.button {
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  background-color: #358f3a;
+
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #2a772f;
+}
+
+.popup {
+  position: fixed;
+  opacity: 0;
+  width: max-content;
+  z-index: 100;
+  padding: 0.75rem;
+  background-color: rgb(235, 92, 92);
+  border-radius: 0.25rem;
+  color: white;
+  bottom: 2rem;
+  left: 2rem;
+  transform: translateX(-400px);
+
+  transition: transform 0.3s cubic-bezier(0.48, 0.74, 0.43, 1.22);
+}
+
+.popup-active {
+  opacity: 1;
+  transform: translateX(0);
+}
