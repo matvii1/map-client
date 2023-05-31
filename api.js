@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:4444/places'
+const BASE_URL = 'http://localhost:4441/places'
 
 export const placesService = {
   async getAll() {

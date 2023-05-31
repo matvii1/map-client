@@ -1,8 +1,8 @@
 import { placesService } from './api.js'
 import { map } from './map.js'
 import './style.css'
-const form = document.querySelector('.form')
 
+const form = document.querySelector('.form')
 const popup = document.querySelector('.popup')
 const popupText = popup.querySelector('.popup-text')
 
